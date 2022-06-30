@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Unimall_Shared\Shared.csproj" />
+    <ProjectReference Include="..\..\Domain\Shared\Shared.csproj" />
   </ItemGroup>
 
 </Project>

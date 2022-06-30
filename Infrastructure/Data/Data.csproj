@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Unimall_Core\Core.csproj" />
-    <ProjectReference Include="..\Unimall_Shared\Shared.csproj" />
+    <ProjectReference Include="..\..\Application\Core\Core.csproj" />
+    <ProjectReference Include="..\..\Domain\Shared\Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
