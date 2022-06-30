@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unimall_Worker", "Unimall_Worker\Unimall_Worker.csproj", "{68AE0FD1-9039-4209-AD33-9EEA26272DD4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{79E10BB5-C55A-48DF-8D51-6F67B1C36B48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unimall_Data", "Unimall_Data\Unimall_Data.csproj", "{B318E1CB-6C5D-4137-B58E-E8042442E5F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Unimall_Data\Data.csproj", "{B318E1CB-6C5D-4137-B58E-E8042442E5F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6B544005-1B9B-47EC-B6BA-21579B044541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Unimall_Core\Core.csproj", "{B341FD98-3C9E-4338-8CDE-B26C6C7F521E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{75A7E284-5690-465A-9B6D-F210EA2053CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Unimall_Shared\Shared.csproj", "{93FED282-A08A-44B2-8D88-81D891B8E1E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentations", "Presentations", "{1748C3AB-0D99-46C4-9753-800EB0ACD5CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Background_Worker", "Worker\Background_Worker.csproj", "{927CC953-EED8-4DEA-AF97-D442897F62AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,20 +25,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68AE0FD1-9039-4209-AD33-9EEA26272DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68AE0FD1-9039-4209-AD33-9EEA26272DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68AE0FD1-9039-4209-AD33-9EEA26272DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68AE0FD1-9039-4209-AD33-9EEA26272DD4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B318E1CB-6C5D-4137-B58E-E8042442E5F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B318E1CB-6C5D-4137-B58E-E8042442E5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B318E1CB-6C5D-4137-B58E-E8042442E5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B318E1CB-6C5D-4137-B58E-E8042442E5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B341FD98-3C9E-4338-8CDE-B26C6C7F521E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B341FD98-3C9E-4338-8CDE-B26C6C7F521E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B341FD98-3C9E-4338-8CDE-B26C6C7F521E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B341FD98-3C9E-4338-8CDE-B26C6C7F521E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FED282-A08A-44B2-8D88-81D891B8E1E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FED282-A08A-44B2-8D88-81D891B8E1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FED282-A08A-44B2-8D88-81D891B8E1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FED282-A08A-44B2-8D88-81D891B8E1E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927CC953-EED8-4DEA-AF97-D442897F62AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927CC953-EED8-4DEA-AF97-D442897F62AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927CC953-EED8-4DEA-AF97-D442897F62AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927CC953-EED8-4DEA-AF97-D442897F62AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B318E1CB-6C5D-4137-B58E-E8042442E5F7} = {79E10BB5-C55A-48DF-8D51-6F67B1C36B48}
+		{B341FD98-3C9E-4338-8CDE-B26C6C7F521E} = {6B544005-1B9B-47EC-B6BA-21579B044541}
+		{93FED282-A08A-44B2-8D88-81D891B8E1E9} = {75A7E284-5690-465A-9B6D-F210EA2053CC}
+		{927CC953-EED8-4DEA-AF97-D442897F62AB} = {1748C3AB-0D99-46C4-9753-800EB0ACD5CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86EC8DC1-ADCC-458A-A7FA-43D6C863BA53}

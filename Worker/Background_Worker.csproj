@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-Unimall_Worker-62842B49-1030-4CDC-AB87-55FD15F638FB</UserSecretsId>
+    <UserSecretsId>dotnet-Worker-18C5A4AE-6F55-410E-B68F-6121122042C1</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Unimall_Core\Core.csproj" />
     <ProjectReference Include="..\Unimall_Data\Data.csproj" />
+    <ProjectReference Include="..\Unimall_Shared\Shared.csproj" />
   </ItemGroup>
 </Project>
