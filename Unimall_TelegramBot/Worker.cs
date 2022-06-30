@@ -1,24 +1,21 @@
-using Background_Worker.TelegramBot;
-using Telegram.Bot;
+using Unimall_TelegramBot.TelegramBot;
 
-namespace Background_Worker
+namespace Unimall_TelegramBot
 {
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
+        private readonly ITelegramBotService _telegramBotService;
 
-        private readonly ITelegramBotService _tgService;
-
-        public Worker(ILogger<Worker> logger, ITelegramBotService tgService)
+        public Worker(ILogger<Worker> logger, ITelegramBotService telegramBotService)
         {
             _logger = logger;
-            _tgService = tgService;
+            _telegramBotService = telegramBotService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-
-            _tgService.Start();
+            _telegramBotService.Start();
 
             while (!stoppingToken.IsCancellationRequested)
             {
@@ -28,7 +25,7 @@ namespace Background_Worker
 
             if (stoppingToken.IsCancellationRequested)
             {
-                _tgService.Stop();
+                _telegramBotService.Stop();
             }
         }
     }

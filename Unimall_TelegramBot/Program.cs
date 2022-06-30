@@ -1,5 +1,5 @@
-using Background_Worker;
-using Background_Worker.TelegramBot;
+using Unimall_TelegramBot;
+using Unimall_TelegramBot.TelegramBot;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
