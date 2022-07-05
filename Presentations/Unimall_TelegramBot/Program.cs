@@ -20,7 +20,7 @@ public class Program
             .ConfigureServices((hostContext, services) =>
             {
                 var configuration = hostContext.Configuration;
-
+                
                 //Регистрируем конфиги из AppSettings
                 services.GetGoogleSheetsSettings(configuration);
                 services.GetApplicationSettings(configuration);
